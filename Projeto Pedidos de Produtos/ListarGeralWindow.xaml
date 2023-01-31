@@ -1,0 +1,17 @@
+﻿<Window x:Class="Projeto_Pedidos_de_Produtos.ListarGeralWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
+        mc:Ignorable="d"
+        Title="ListarGeralWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,71,36,293"/>
+        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,201,36,163"/>
+        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,337,36,27"/>
+        <TextBlock TextWrapping="Wrap" Margin="36,31,655,369" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="36,160,655,240" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Itens"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="36,297,655,103" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+    </Grid>
+</Window>
