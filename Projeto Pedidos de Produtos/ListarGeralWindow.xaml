@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="ListarGeralWindow" Height="450" Width="800">
+        Title="ListarGeralWindow" Height="550" Width="800">
     <Grid>
-        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,71,36,293"/>
-        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,201,36,163"/>
-        <ListBox RenderTransformOrigin="0.526,0.552" Margin="36,337,36,27"/>
-        <TextBlock TextWrapping="Wrap" Margin="36,31,655,369" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="36,160,655,240" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Itens"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="36,297,655,103" FontSize="22" RenderTransformOrigin="0.189,0.598"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <ListBox x:Name="ListPedido" RenderTransformOrigin="0.526,0.552" Margin="36,66,34,368" Height="100" Width="730"/>
+        <ListBox x:Name="ListItem" RenderTransformOrigin="0.526,0.552" Margin="35,206,35,228" Height="100" Width="730"/>
+        <ListBox x:Name="ListProduto" RenderTransformOrigin="0.526,0.552" Margin="35,342,35,92" Height="100" Width="730"/>
+        <TextBlock TextWrapping="Wrap" Margin="36,36,664,468" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="36,171,664,333" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Itens"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="35,307,665,197" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Center" Height="40" Margin="0,466,0,0" VerticalAlignment="Top" Width="450" Click="ListarButton_Click"/>
     </Grid>
 </Window>

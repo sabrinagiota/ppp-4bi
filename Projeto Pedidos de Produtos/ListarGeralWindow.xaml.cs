@@ -24,9 +24,17 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
+        private void ListarButton_Click(object sender, RoutedEventArgs e)
+        {
+            ListPedido.ItemsSource = null;
+            ListPedido.ItemsSource = NPedido.Listar();
+
+            ListProduto.ItemsSource = null;
+            ListProduto.ItemsSource = NProduto.Listar();
+
+            ListItem.ItemsSource = null;
+            ListItem.ItemsSource = NItem.Listar();
         }
     }
 }
