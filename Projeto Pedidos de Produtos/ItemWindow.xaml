@@ -5,28 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="ItemWindow" Height="950" Width="800">
+        Title="ItemWindow" Height="980" Width="810">
     <Grid>
-        <Button x:Name="cadastraritem" Content="Cadastrar Item e Produto" HorizontalAlignment="Left" Margin="104,848,0,0" VerticalAlignment="Top" Height="32" Width="262" Click="cadastraritem_Click"/>
-        <Button x:Name="voltarmenu" Content="Voltar para o menu inicial" HorizontalAlignment="Left" Margin="465,848,0,0" VerticalAlignment="Top" Height="32" Width="223" Click="voltarmenu_Click"/>
-        <ListBox x:Name="listaitem" HorizontalAlignment="Center" Height="100" Margin="0,254,0,0" VerticalAlignment="Top" Width="700"/>
+        <Button x:Name="cadastraritem" Content="Cadastrar Item e Produto" HorizontalAlignment="Left" Margin="115,848,0,0" VerticalAlignment="Top" Height="32" Width="262" Click="cadastraritem_Click"/>
+        <Button x:Name="voltarmenu" Content="Voltar para o menu inicial" HorizontalAlignment="Left" Margin="440,848,0,0" VerticalAlignment="Top" Height="32" Width="223" Click="voltarmenu_Click"/>
+        <ListBox x:Name="listaitem" HorizontalAlignment="Left" Height="100" Margin="50,245,0,0" VerticalAlignment="Top" Width="700"/>
         <TextBox x:Name="iditem" HorizontalAlignment="Left" Height="20" Margin="51,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox x:Name="descricao" HorizontalAlignment="Left" Height="76" Margin="51,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="654"/>
+        <TextBox x:Name="descricao" HorizontalAlignment="Left" Height="76" Margin="51,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="699"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="51,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115"><Run Language="pt-br" Text="Id do Item"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="51,104,0,0" Text="Descrição do Item" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="50,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.496,0.652"><Run Language="pt-br" Text="Lista de Itens"/></TextBlock>
-        <ListBox x:Name="listaprodutos" HorizontalAlignment="Center" Height="100" Margin="0,668,0,0" VerticalAlignment="Top" Width="700"/>
-        <TextBox x:Name="idproduto" HorizontalAlignment="Left" Height="20" Margin="21,477,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox x:Name="nomeproduto" HorizontalAlignment="Center" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Margin="0,477,0,0"/>
-        <TextBox x:Name="fornecedor" HorizontalAlignment="Center" Height="45" Margin="0,532,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="760"/>
-        <TextBox x:Name="pre" HorizontalAlignment="Left" Height="20" Margin="20,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="21,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="75"><Run Language="pt-br" Text="Id do Produto"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="275,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="150"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="21,584,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="pt-br" Text="Preço"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="51,648,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"><Run Language="pt-br" Text="Lista de Produtos"/></TextBlock>
-        <Rectangle HorizontalAlignment="Center" Height="338" Margin="0,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="780"/>
-        <Rectangle HorizontalAlignment="Center" Height="378" Margin="0,427,0,0" Stroke="Black" VerticalAlignment="Top" Width="780"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="50,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.496,0.652"><Run Language="pt-br" Text="Lista de Itens"/></TextBlock>
+        <ListBox x:Name="listaprodutos" HorizontalAlignment="Left" Height="100" Margin="50,717,0,0" VerticalAlignment="Top" Width="700"/>
+        <TextBox x:Name="idproduto" HorizontalAlignment="Left" Height="20" Margin="51,477,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="nomeproduto" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Margin="275,477,0,0"/>
+        <TextBox x:Name="fornecedor" HorizontalAlignment="Left" Height="45" Margin="51,549,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="670"/>
+        <TextBox x:Name="pre" HorizontalAlignment="Left" Height="20" Margin="50,650,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,457,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Id do Produto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="275,457,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="150"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="51,529,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="50,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="pt-br" Text="Preço"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="51,697,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"><Run Language="pt-br" Text="Lista de Produtos"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="472" Margin="24,424,0,0" Stroke="Black" VerticalAlignment="Top" Width="752"/>
+        <Rectangle HorizontalAlignment="Left" Height="376" Margin="24,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="752"/>
 
 
     </Grid>

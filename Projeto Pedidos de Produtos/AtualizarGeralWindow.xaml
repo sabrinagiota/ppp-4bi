@@ -13,7 +13,7 @@
         <TextBox HorizontalAlignment="Left" Margin="120,78,0,0" Text="Id do Pedido" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Left" Margin="120,160,0,0" Text="Data de Criação" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="21" Height="32"/>
         <TextBox HorizontalAlignment="Left" Margin="361,158,0,0" Text="Data de Envio" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="21" RenderTransformOrigin="0.466,0.619" Height="34"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,78,0,0" Text="Nome do Usuário" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="22"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,78,0,0" Text="Nome do Usuário" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Left" Margin="598,158,0,0" Text="Status do Pedido" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Left" Margin="119,398,0,0" Text="Id do Item" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Center" Margin="0,398,0,0" Text="Descrição do Item" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
@@ -21,9 +21,9 @@
         <TextBox HorizontalAlignment="Left" Margin="356,609,0,0" Text="Nome do Produto" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Left" Margin="120,705,0,0" Text="Fornecedor" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Center" Margin="0,705,0,0" Text="Preço" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
-        <Rectangle Stroke="Black" Margin="52,586,56,48"/>
-        <Rectangle Stroke="Black" Margin="49,348,59,359"/>
-        <Rectangle Stroke="Black" Margin="49,45,59,599"/>
+        <Rectangle Stroke="Black" Margin="52,584,56,50"/>
+        <Rectangle Stroke="Black" Margin="52,344,56,363"/>
+        <Rectangle Stroke="Black" Margin="52,44,59,600"/>
 
     </Grid>
 </Window>
