@@ -11,7 +11,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="31,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="100"><Run Language="pt-br" Text="Id do Pedido"/></TextBlock>
         <TextBox x:Name="Datacriacao" HorizontalAlignment="Left" Margin="31,127,0,0" Text="DD/MM/AAAA" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
         <TextBox x:Name="Dataenvio" HorizontalAlignment="Left" Margin="186,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" Text="DD/MM/AAAA"/>
-        <TextBox x:Name="Status" HorizontalAlignment="Left" Margin="341,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
+        <TextBox x:Name="Status" HorizontalAlignment="Left" Margin="360,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
         <TextBox x:Name="Nomeusuario" HorizontalAlignment="Left" Margin="186,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="186,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="100"><Run Language="pt-br" Text="Nome do Usuario "/><LineBreak/><Run Language="pt-br"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="31,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100"><Run Language="pt-br" Text="Data de Criação "/><LineBreak/><Run Language="pt-br"/></TextBlock>
@@ -19,5 +19,12 @@
         <TextBlock HorizontalAlignment="Left" Margin="341,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100" RenderTransformOrigin="0.418,0.579"><Run Language="pt-br" Text="Status do Pedido"/></TextBlock>
         <Button x:Name="CadastrarPedido" Content="Cadastrar Pedido" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="28" Width="228" Click="CadastrarPedido_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="31,8,0,0" Text="Informações do Pedido" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="combostatus" HorizontalAlignment="Left" Margin="341,126,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" IsDropDownOpen="True">
+            <ComboBoxItem Content="Negado"/>
+            <ComboBoxItem Content="Enviado"/>
+            <ComboBoxItem Content="Processando"/>
+            <ComboBoxItem Content="Pendente"/>
+            <ComboBoxItem Content="Concluido"/>
+        </ComboBox>
     </Grid>
 </Window>

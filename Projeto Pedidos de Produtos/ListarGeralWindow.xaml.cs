@@ -35,6 +35,10 @@ namespace Projeto_Pedidos_de_Produtos
 
             ListItem.ItemsSource = null;
             ListItem.ItemsSource = NItem.Listar();
+
+            listtotal.Items.Clear();
+            listtotal.Items.Add(NProduto.Soma());
         }
+
     }
 }

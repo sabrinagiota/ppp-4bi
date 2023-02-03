@@ -33,7 +33,8 @@ namespace Projeto_Pedidos_de_Produtos
             string nome = Nomeusuario.Text;
             string datacriacao = Datacriacao.Text;
             string dataenvio = Dataenvio.Text;
-            string status = Status.Text;
+            string status = combostatus.Text;
+ 
 
             Pedido t = new Pedido
             {

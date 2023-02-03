@@ -26,7 +26,7 @@ namespace Projeto_Pedidos_de_Produtos
 
         private void cadastraritem_Click(object sender, RoutedEventArgs e)
         {
-            int Iditem = int.Parse(iditem.Text);
+            int id = int.Parse(iditem.Text);
             int idprod = int.Parse(idproduto.Text);
             string desc = descricao.Text;
             string nomeprod = nomeproduto.Text;
@@ -35,7 +35,7 @@ namespace Projeto_Pedidos_de_Produtos
 
             Item i = new Item()
             {
-                ID = Iditem,
+                ID = id,
                 DescricaoItem = desc
             };
             Produto pro = new Produto()
@@ -49,6 +49,11 @@ namespace Projeto_Pedidos_de_Produtos
             NItem.Inserir(i);
             NProduto.Inserir(pro);
 
+            listaitem.ItemsSource = null;
+            listaitem.ItemsSource = NItem.Listar();
+
+            listaprodutos.ItemsSource = null;
+            listaprodutos.ItemsSource = NProduto.Listar();
             //NItem.Vincular(i, pro, p);
 
         }

@@ -11,7 +11,7 @@ namespace Projeto_Pedidos_de_Produtos
     public class Pedido
     {
         public int IdPedido { get; set; }
-        public int Total { get; set; }
+        public double Total { get; set; }
 
         public string DataCriacao { get; set; }
         public string DataEnvio { get; set; }

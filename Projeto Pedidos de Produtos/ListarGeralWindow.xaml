@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="ListarGeralWindow" Height="550" Width="800">
+        Title="ListarGeralWindow" Height="650" Width="800">
     <Grid>
-        <ListBox x:Name="ListPedido" RenderTransformOrigin="0.526,0.552" Margin="36,66,34,368" Height="100" Width="730"/>
-        <ListBox x:Name="ListItem" RenderTransformOrigin="0.526,0.552" Margin="35,206,35,228" Height="100" Width="730"/>
-        <ListBox x:Name="ListProduto" RenderTransformOrigin="0.526,0.552" Margin="35,342,35,92" Height="100" Width="730"/>
-        <TextBlock TextWrapping="Wrap" Margin="36,36,664,468" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="36,171,664,333" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Itens"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="35,307,665,197" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Produtos"/></TextBlock>
-        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Center" Height="40" Margin="0,466,0,0" VerticalAlignment="Top" Width="450" Click="ListarButton_Click"/>
+        <ListBox x:Name="ListPedido" RenderTransformOrigin="0.526,0.552" Margin="36,54,34,480" Height="100" Width="730"/>
+        <ListBox x:Name="ListItem" RenderTransformOrigin="0.526,0.552" Margin="35,194,35,340" Height="100" Width="730"/>
+        <ListBox x:Name="ListProduto" RenderTransformOrigin="0.526,0.552" Margin="35,330,35,204" Height="100" Width="730"/>
+        <TextBlock TextWrapping="Wrap" Margin="36,24,664,580" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="36,159,664,445" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Itens"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="35,295,665,309" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Center" Height="40" Margin="0,559,0,0" VerticalAlignment="Top" Width="450" Click="ListarButton_Click"/>
+        <ListBox x:Name="listtotal" HorizontalAlignment="Center" Height="47" Margin="0,475,0,0" VerticalAlignment="Top" Width="730"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="38,446,0,0" Text="Total dos Pedidos" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="22"/>
     </Grid>
 </Window>
