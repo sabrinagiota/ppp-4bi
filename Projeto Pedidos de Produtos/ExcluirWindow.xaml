@@ -14,7 +14,7 @@
         <Button x:Name="ExPedido" Content="Excluir pedido" Margin="62,158,582,233" FontSize="22" Click="ExPedido_Click"/>
         <Button x:Name="ExItem" Content="Excluir item" Margin="322,158,322,233" FontSize="22" RenderTransformOrigin="0.703,1.719" Click="ExItem_Click"/>
         <Button x:Name="ExProduto" Content="Excluir produto" Margin="575,158,62,233" FontSize="22" Click="ExProduto_Click"/>
-        <TextBox x:Name="IdExcluir" TextWrapping="Wrap" Margin="62,252,62,135"/>
-        <TextBlock HorizontalAlignment="Left" Margin="62,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Id do Pedido, do Item ou do Produto a excluir:" FontSize="16"/>
+        <TextBox x:Name="IdExcluir" TextWrapping="Wrap" Margin="62,255,62,132"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"><Run Text="Id do Pedido, "/><Run Language="pt-br" Text="i"/><Run Text="tem ou"/><Run Language="pt-br" Text=" "/><Run Language="pt-br" Text="p"/><Run Text="roduto a excluir:"/></TextBlock>
     </Grid>
 </Window>
