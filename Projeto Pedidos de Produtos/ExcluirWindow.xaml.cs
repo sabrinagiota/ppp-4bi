@@ -24,9 +24,40 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ExPedido_Click(object sender, RoutedEventArgs e)
         {
+            int excluirpedido = int.Parse(IdExcluir.Text);
 
+            Pedido p = new Pedido()
+            {
+                IdPedido = excluirpedido
+            };
+
+            NPedido.Excluir(p);
+        }
+
+        private void ExItem_Click(object sender, RoutedEventArgs e)
+        {
+            int excluirItem = int.Parse(IdExcluir.Text);
+
+            Item i = new Item()
+            {
+                ID = excluirItem
+            };
+
+            NItem.Excluir(i);
+        }
+
+        private void ExProduto_Click(object sender, RoutedEventArgs e)
+        {
+            int excluirproduto = int.Parse(IdExcluir.Text);
+
+            Produto pro = new Produto()
+            {
+                IdProduto = excluirproduto
+            };
+
+            NProduto.Excluir(pro);
         }
     }
 }

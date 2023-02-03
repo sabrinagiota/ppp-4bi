@@ -49,7 +49,7 @@ namespace Projeto_Pedidos_de_Produtos
             NItem.Inserir(i);
             NProduto.Inserir(pro);
 
-            NItem.Vincular();
+            //NItem.Vincular(i, pro, p);
 
         }
 

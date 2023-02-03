@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="AtualizarGeralWindow" Height="930" Width="900">
     <Grid Margin="0,10,0,0" RenderTransformOrigin="0.522,0.502">
-        <Button x:Name="attpedido" Content="Atualizar pedido" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Height="52" Width="326" Click="attpedido_Click" FontSize="22"/>
-        <Button x:Name="attpedido_Copy" Content="Atualizar item" HorizontalAlignment="Center" Margin="0,468,0,0" VerticalAlignment="Top" Height="52" Width="326" Click="attpedido_Click" FontSize="22"/>
-        <Button x:Name="attpedido_Copy1" Content="Atualizar produto" HorizontalAlignment="Center" Margin="0,781,0,0" VerticalAlignment="Top" Height="51" Width="326" Click="attpedido_Click" FontSize="22"/>
+        <Button x:Name="attpedido" Content="Atualizar pedido" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Height="52" Width="326" FontSize="22" Click="attpedido_Click"/>
+        <Button x:Name="attitem" Content="Atualizar item" HorizontalAlignment="Center" Margin="0,468,0,0" VerticalAlignment="Top" Height="52" Width="326" FontSize="22"/>
+        <Button x:Name="attproduto" Content="Atualizar produto" HorizontalAlignment="Center" Margin="0,781,0,0" VerticalAlignment="Top" Height="51" Width="326" FontSize="22"/>
         <TextBox HorizontalAlignment="Left" Margin="120,78,0,0" Text="Id do Pedido" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="34" FontSize="21"/>
         <TextBox HorizontalAlignment="Left" Margin="120,160,0,0" Text="Data de Criação" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="21" Height="32"/>
         <TextBox HorizontalAlignment="Left" Margin="361,158,0,0" Text="Data de Envio" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="21" RenderTransformOrigin="0.466,0.619" Height="34"/>

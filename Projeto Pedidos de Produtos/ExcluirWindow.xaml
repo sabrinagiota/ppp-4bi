@@ -11,9 +11,10 @@
             <RowDefinition Height="216*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Excluir pedido" Margin="62,158,582,233" Click="Button_Click" FontSize="22"/>
-        <Button Content="Excluir item" Margin="332,158,312,233" Click="Button_Click" FontSize="22" RenderTransformOrigin="0.703,1.719"/>
-        <Button Content="Excluir produto" Margin="575,158,62,233" Click="Button_Click" FontSize="22"/>
-        <TextBox TextWrapping="Wrap" Margin="62,237,62,150"/>
+        <Button x:Name="ExPedido" Content="Excluir pedido" Margin="62,158,582,233" FontSize="22" Click="ExPedido_Click"/>
+        <Button x:Name="ExItem" Content="Excluir item" Margin="322,158,322,233" FontSize="22" RenderTransformOrigin="0.703,1.719" Click="ExItem_Click"/>
+        <Button x:Name="ExProduto" Content="Excluir produto" Margin="575,158,62,233" FontSize="22" Click="ExProduto_Click"/>
+        <TextBox x:Name="IdExcluir" TextWrapping="Wrap" Margin="62,252,62,135"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Id do Pedido, do Item ou do Produto a excluir:" FontSize="16"/>
     </Grid>
 </Window>

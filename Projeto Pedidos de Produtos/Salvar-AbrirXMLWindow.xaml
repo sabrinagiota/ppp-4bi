@@ -7,13 +7,12 @@
         mc:Ignorable="d"
         Title="Salvar_AbrirXMLWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Salvar Pedido(s)" Margin="66,77,569,308" Click="Button_Click" FontSize="22"/>
-        <Button Content="Salvar Item(s)" Margin="315,77,333,308" Click="Button_Click" FontSize="22"/>
-        <Button Content="Salvar Produto(s)" Margin="563,77,68,308" Click="Button_Click" FontSize="22"/>
-        <Button Content="Abrir Pedido(s)" Margin="66,194,569,191" Click="Button_Click" FontSize="22"/>
-        <Button Content="Abrir Item(s)" Margin="314,194,333,191" Click="Button_Click" FontSize="22"/>
-        <Button Content="Abrir Produto(s)" Margin="563,194,68,191" Click="Button_Click" FontSize="22"/>
-        <TextBox TextWrapping="Wrap" Margin="66,286,68,85"/>
+        <Button x:Name="Salvarpedido" Content="Salvar Pedido(s)" Margin="68,141,567,244" FontSize="22" Click="Salvarpedido_Click"/>
+        <Button x:Name="SalvarItem" Content="Salvar Item(s)" Margin="317,141,331,244" FontSize="22" Click="SalvarItem_Click"/>
+        <Button x:Name="SalvarProduto" Content="Salvar Produto(s)" Margin="565,141,66,244" FontSize="22" Click="SalvarProduto_Click"/>
+        <Button x:Name="AbrirPedido" Content="Abrir Pedido(s)" Margin="68,258,567,127" FontSize="22" Click="AbrirPedido_Click"/>
+        <Button x:Name="AbrirItem" Content="Abrir Item(s)" Margin="316,258,331,127" FontSize="22" Click="AbrirItem_Click"/>
+        <Button x:Name="AbrirProduto" Content="Abrir Produto(s)" Margin="565,258,66,127" FontSize="22" Click="AbrirProduto_Click"/>
 
     </Grid>
 </Window>

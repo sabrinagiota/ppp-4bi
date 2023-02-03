@@ -23,5 +23,10 @@ namespace Projeto_Pedidos_de_Produtos
         {
             InitializeComponent();
         }
+
+        private void attpedido_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
