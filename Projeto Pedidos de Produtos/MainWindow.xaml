@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="500">
+        Title="MainWindow" Height="200" Width="530">
     <Grid x:Name="excluir" Margin="3,0,-3,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="FazerPedido" Content="Fazer um Novo Pedido" HorizontalAlignment="Right" Margin="0,0,333,136" VerticalAlignment="Bottom" Grid.Column="1" Height="20" Width="150" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519"/>
-        <Button x:Name="LevarpraListar" Content="Ver Pedidos" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="192,0,0,136" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click"/>
-        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="17,66,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
-        <Button x:Name="atualizar" Content="Atualizar" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="84,66,0,0" VerticalAlignment="Top" Click="atualizar_Click" Width="60"/>
-        <Button x:Name="salvarouabrir" Content="Salvar ou abrir arquivo" HorizontalAlignment="Left" Margin="171,66,0,0" VerticalAlignment="Top" Click="salvarouabrir_Click" Width="130" Grid.Column="1"/>
+        <Button x:Name="FazerPedido" Content="Fazer um Novo Pedido" HorizontalAlignment="Right" Margin="0,0,335,136" VerticalAlignment="Bottom" Grid.Column="1" Height="20" Width="150" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519"/>
+        <Button x:Name="LevarpraListar" Content="Ver Pedidos" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="233,0,0,136" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click"/>
+        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="45,74,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
+        <Button x:Name="atualizar" Content="Atualizar" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="120,74,0,0" VerticalAlignment="Top" Click="atualizar_Click" Width="60"/>
+        <Button x:Name="salvarouabrir" Content="Salvar ou abrir arquivo" HorizontalAlignment="Left" Margin="223,74,0,0" VerticalAlignment="Top" Click="salvarouabrir_Click" Width="130" Grid.Column="1"/>
 
     </Grid>
 </Window>

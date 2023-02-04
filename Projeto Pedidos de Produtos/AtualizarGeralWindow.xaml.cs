@@ -76,5 +76,10 @@ namespace Projeto_Pedidos_de_Produtos
 
             NProduto.Atualizar(pro);
         }
+
+        private void fornecedortext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
