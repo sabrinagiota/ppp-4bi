@@ -15,26 +15,13 @@ using System.Windows.Shapes;
 namespace Projeto_Pedidos_de_Produtos
 {
     /// <summary>
-    /// Lógica interna para ListarGeralWindow.xaml
+    /// Lógica interna para ProdutoWindow.xaml
     /// </summary>
-    public partial class ListarGeralWindow : Window
+    public partial class ProdutoWindow : Window
     {
-        public ListarGeralWindow()
+        public ProdutoWindow()
         {
             InitializeComponent();
-        }
-
-
-
-        private void ListarButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void voltarmenu_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow vol = new MainWindow();
-            vol.ShowDialog();
         }
     }
 }

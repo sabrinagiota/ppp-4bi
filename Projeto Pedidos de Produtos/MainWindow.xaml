@@ -11,10 +11,11 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="FazerPedido" Content="Inserir Novo Pedido" Margin="0,0,335,136" Grid.Column="1" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519" HorizontalAlignment="Right" Width="150" Height="20" VerticalAlignment="Bottom"/>
-        <Button x:Name="LevarpraListar" Content="Listar Cadastrados" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,147,136" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click"/>
-        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="45,74,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
+        <Button x:Name="FazerPedido" Content="Inserir Novo Pedido" Margin="0,0,370,154" Grid.Column="1" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519" HorizontalAlignment="Right" Width="150" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="LevarpraListar" Content="Listar Cadastrados" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,202,154" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click"/>
+        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="120,99,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
         <Button x:Name="atualizar" Content="Atualizar" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,350,90" VerticalAlignment="Bottom" Click="atualizar_Click" Width="60"/>
+        <Button Content="Inserir Produto no Sistema" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="17,154,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
