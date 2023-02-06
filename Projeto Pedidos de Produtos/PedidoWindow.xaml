@@ -7,18 +7,21 @@
         mc:Ignorable="d"
         Title="PedidoWindow" Height="250" Width="500">
     <Grid>
-        <TextBox x:Name="Idpedido" HorizontalAlignment="Left" Margin="31,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="31,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="100"><Run Language="pt-br" Text="Id do Pedido"/></TextBlock>
-        <TextBox x:Name="Datacriacao" HorizontalAlignment="Left" Margin="31,127,0,0" Text="DD/MM/AAAA" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
-        <TextBox x:Name="Dataenvio" HorizontalAlignment="Left" Margin="186,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" Text="DD/MM/AAAA"/>
-        <TextBox x:Name="Nomeusuario" HorizontalAlignment="Left" Margin="186,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="186,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="100"><Run Language="pt-br" Text="Nome do Usuario "/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Idpedido" HorizontalAlignment="Right" Margin="0,0,349,146" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,369,166" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20" Width="100"><Run Language="pt-br" Text="Id do Pedido"/></TextBlock>
+        <TextBox x:Name="Datacriacao" HorizontalAlignment="Right" Margin="0,0,349,87" Text="DD/MM/AAAA" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20"/>
+        <TextBox x:Name="Dataenvio" HorizontalAlignment="Right" Margin="0,0,194,87" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20" Text="DD/MM/AAAA"/>
+        <TextBox x:Name="Nomeusuario" HorizontalAlignment="Right" Margin="0,0,39,146" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="275" Height="20"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,214,166" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20" Width="100"><Run Language="pt-br" Text="Nome do Usuario "/><LineBreak/><Run Language="pt-br"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="31,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100"><Run Language="pt-br" Text="Data de Criação "/><LineBreak/><Run Language="pt-br"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="186,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100"><Run Language="pt-br" Text="Data de Envio"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="341,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100" RenderTransformOrigin="0.418,0.579"><Run Language="pt-br" Text="Status do Pedido"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,59,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" Width="100" RenderTransformOrigin="0.418,0.579"><Run Language="pt-br" Text="Status do Pedido"/></TextBlock>
         <Button x:Name="CadastrarPedido" Content="Cadastrar Pedido" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="28" Width="228" Click="CadastrarPedido_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="31,8,0,0" Text="Informações do Pedido" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
-        <ComboBox x:Name="combostatus" HorizontalAlignment="Left" Margin="341,126,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" IsDropDownOpen="True">
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,306,205" Text="Informações do Pedido" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="16"/>
+        <ComboBox x:Name="combostatus" HorizontalAlignment="Right" Margin="0,0,39,86" VerticalAlignment="Bottom" Width="120" IsEditable="True" IsDropDownOpen="True">
             <ComboBoxItem Content="Negado"/>
             <ComboBoxItem Content="Enviado"/>
             <ComboBoxItem Content="Processando"/>

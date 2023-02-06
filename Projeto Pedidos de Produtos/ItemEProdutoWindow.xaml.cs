@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Projeto_Pedidos_de_Produtos
 {
     /// <summary>
-    /// Lógica interna para ItemWindow.xaml
+    /// Lógica interna para ItemEProdutoWindow.xaml
     /// </summary>
-    public partial class ItemWindow : Window
+    public partial class ItemEProdutoWindow : Window
     {
-        public ItemWindow()
+        public ItemEProdutoWindow()
         {
             InitializeComponent();
         }

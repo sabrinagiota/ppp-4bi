@@ -11,10 +11,12 @@
             <RowDefinition Height="216*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="ExPedido" Content="Excluir pedido" Margin="62,158,568,216" FontSize="22" Click="ExPedido_Click"/>
-        <Button x:Name="ExItem" Content="Excluir item" Margin="315,158,315,216" FontSize="22" RenderTransformOrigin="0.703,1.719" Click="ExItem_Click"/>
-        <Button x:Name="ExProduto" Content="Excluir produto" Margin="568,158,62,216" FontSize="22" Click="ExProduto_Click"/>
-        <TextBox x:Name="IdExcluir" TextWrapping="Wrap" Margin="62,259,62,128"/>
-        <TextBlock HorizontalAlignment="Left" Margin="62,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"><Run Text="Id do Pedido, "/><Run Language="pt-br" Text="i"/><Run Text="tem ou"/><Run Language="pt-br" Text=" "/><Run Language="pt-br" Text="p"/><Run Text="roduto a excluir:"/></TextBlock>
+        <Button x:Name="ExPedido" Content="Excluir pedido" Margin="0,320,568,0" FontSize="22" Click="ExPedido_Click" HorizontalAlignment="Right" Width="170" Height="58" VerticalAlignment="Top"/>
+        <Button x:Name="ExItem" Content="Excluir item" Margin="0,320,315,0" FontSize="22" RenderTransformOrigin="0.703,1.719" Click="ExItem_Click" Height="58" VerticalAlignment="Top" HorizontalAlignment="Right" Width="170"/>
+        <Button x:Name="ExProduto" Content="Excluir produto" Margin="568,320,0,0" FontSize="22" Click="ExProduto_Click" Height="58" VerticalAlignment="Top" HorizontalAlignment="Left" Width="170"/>
+        <TextBox x:Name="IdExcluir" TextWrapping="Wrap" Margin="0,0,0,146" HorizontalAlignment="Center" Width="676" Height="45" VerticalAlignment="Bottom"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,458,195" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="16"><Run Text="Id do Pedido, "/><Run Language="pt-br" Text="i"/><Run Text="tem ou"/><Run Language="pt-br" Text=" "/><Run Language="pt-br" Text="p"/><Run Text="roduto a excluir:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Height="31" Margin="0,0,598,391" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="192" FontSize="22" FontWeight="Normal"><Run Language="pt-br" Text="Janela Para excluir"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,0,247" TextWrapping="Wrap" Width="538" Height="70" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Informe abaixo o id que deseja excluir e clique no botão pra exclusão do tal se for a exclusão de um item clique no botão de excluir item se deseja excluir um pedido clique no botão pra excluir pedido."/></TextBlock>
     </Grid>
 </Window>

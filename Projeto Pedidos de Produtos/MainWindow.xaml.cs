@@ -55,10 +55,5 @@ namespace Projeto_Pedidos_de_Produtos
             atualizargeral.ShowDialog();
         }
 
-        private void salvarouabrir_Click(object sender, RoutedEventArgs e)
-        {
-            Salvar_AbrirXMLWindow save = new Salvar_AbrirXMLWindow();
-            save.ShowDialog();
-        }
     }
 }

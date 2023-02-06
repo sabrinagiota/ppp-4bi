@@ -7,18 +7,23 @@
         mc:Ignorable="d"
         Title="ListarGeralWindow" Height="850" Width="900">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="112*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Right" Height="31" Margin="0,0,2,546" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="440" FontSize="22" FontWeight="Normal"><Run Text="Janela Para "/><Run Language="pt-br" Text="Listar Dados Já cadastrados"/></TextBlock>
         <Grid.RowDefinitions>
-            <RowDefinition Height="210*"/>
-            <RowDefinition Height="160*"/>
+            <RowDefinition Height="587*"/>
+            <RowDefinition Height="247*"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="ListPedido" RenderTransformOrigin="0.526,0.552" Margin="86,103,84,270" Height="100" Width="730"/>
-        <ListBox x:Name="ListItem" RenderTransformOrigin="0.526,0.552" Margin="85,270,85,103" Height="100" Width="730"/>
-        <ListBox x:Name="ListProduto" RenderTransformOrigin="0.526,0.552" Margin="85,436,85,298" Height="100" Width="730" Grid.RowSpan="2"/>
-        <TextBlock TextWrapping="Wrap" Margin="85,73,715,370" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="86,238,714,205" FontSize="21" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Itens"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="86,403,714,40" FontSize="22" RenderTransformOrigin="0.189,0.598" Height="30" Width="100"><Run Language="pt-br" Text="Produtos"/></TextBlock>
-        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Center" Height="40" Margin="0,229,0,0" VerticalAlignment="Top" Width="450" Click="ListarButton_Click" Grid.Row="1"/>
-        <ListBox x:Name="listtotal" HorizontalAlignment="Center" Height="47" Margin="0,130,0,0" VerticalAlignment="Top" Width="730" Grid.Row="1"/>
-        <TextBlock HorizontalAlignment="Left" Height="29" Margin="86,100,0,0" Text="Total dos Pedidos" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="21" Grid.Row="1"/>
+        <ListBox x:Name="ListPedido" RenderTransformOrigin="0.526,0.552" Margin="0,0,84,352" Height="100" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="730" VerticalAlignment="Bottom"/>
+        <ListBox x:Name="ListItem" RenderTransformOrigin="0.526,0.552" Margin="0,0,85,202" Height="100" HorizontalAlignment="Right" Width="730" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
+        <ListBox x:Name="ListProduto" RenderTransformOrigin="0.526,0.552" Margin="85,0,0,60" HorizontalAlignment="Left" Width="730" Height="91" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,267,428" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="79" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,266,263" FontSize="21" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="79" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Itens"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,266,98" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="79" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Right" Height="40" Margin="0,177,225,0" VerticalAlignment="Top" Width="450" Click="ListarButton_Click" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="listtotal" HorizontalAlignment="Right" Height="47" VerticalAlignment="Bottom" Width="730" Margin="0,0,85,126" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Right" Height="29" Margin="0,0,194,170" Text="Total dos Pedidos" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="172" FontSize="21" Grid.Row="1"/>
     </Grid>
 </Window>
