@@ -15,6 +15,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="305,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="150"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="52,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="53,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="pt-br" Text="Preço"/></TextBlock>
-        <Button Content="Inserir Produto" HorizontalAlignment="Center" Height="50" Margin="0,256,0,0" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="inserirproduto" Content="Inserir Produto" HorizontalAlignment="Center" Height="50" Margin="0,256,0,0" VerticalAlignment="Top" Width="300" Click="inserirproduto_Click"/>
     </Grid>
 </Window>

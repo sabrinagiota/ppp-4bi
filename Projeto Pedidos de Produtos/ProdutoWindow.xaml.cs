@@ -23,5 +23,23 @@ namespace Projeto_Pedidos_de_Produtos
         {
             InitializeComponent();
         }
+
+        private void inserirproduto_Click(object sender, RoutedEventArgs e)
+        {
+            int id = int.Parse(idproduto.Text);
+            double prec = double.Parse(pre.Text);
+            string nome = nomeproduto.Text;
+            string forn = fornecedor.Text;
+
+            Produto pro = new Produto()
+            {
+                IdProduto = id,
+                Fornecedor = forn,
+                NomeProduto = nome,
+                Preco = prec
+            };
+
+            MessageBox.Show("Produto Cadastrado no sistema.");
+        }
     }
 }

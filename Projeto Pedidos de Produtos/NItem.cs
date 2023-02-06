@@ -29,6 +29,29 @@ namespace Projeto_Pedidos_de_Produtos
                 if (obj.ID == id) return obj;
             return null;
         }
+        public static Item ListarPedido(int id)
+        {
+            foreach (Item obj in Itens)
+            {
+                if (obj.IdPedido == id)
+                {
+                    return obj;
+                }  
+            }
+            return null;
+        }
+        public static int ListarProduto(int id)
+        {
+            foreach (Item obj in Itens) 
+            {
+
+                if (obj.IdProduto == id) 
+                {
+                    return obj.IdProduto;
+                }
+            }
+            return null;
+        }
         public static void Atualizar(Item i)
         {
             Abrir();
@@ -68,12 +91,15 @@ namespace Projeto_Pedidos_de_Produtos
             xml.Serialize(f, Itens);
             f.Close();
         }
-        public static void Vincular(Item i, Produto pro, Pedido p)
+        public static void VincularPedido(Item i, Pedido p)
         {
             i.IdPedido = p.IdPedido;
+            Atualizar(i);
+        }
+        public static void VincularProduto(Item i, Produto pro)
+        {
             i.IdProduto = pro.IdProduto;
             Atualizar(i);
         }
-
     }
 }

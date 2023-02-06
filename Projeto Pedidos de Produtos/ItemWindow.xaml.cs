@@ -23,5 +23,19 @@ namespace Projeto_Pedidos_de_Produtos
         {
             InitializeComponent();
         }
+
+        private void inseriritem_Click(object sender, RoutedEventArgs e)
+        {
+            int id = int.Parse(iditem.Text);
+            string descri = descricao.Text;
+            Item i = new Item()
+            {
+
+                ID = id,
+                DescricaoItem = descri,
+            };
+
+            MessageBox.Show("Pedido feito retorne a paginas de produtos.");
+        }
     }
 }

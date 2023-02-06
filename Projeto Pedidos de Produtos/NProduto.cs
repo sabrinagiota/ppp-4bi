@@ -29,6 +29,17 @@ namespace Projeto_Pedidos_de_Produtos
                 if (obj.IdProduto == id) return obj;
             return null;
         }
+        public static Produto Listar(Item i)
+        {
+            foreach (Produto obj in Produtos)
+            {
+                if (obj.IdProduto == i.IdProduto)
+                {
+                    return obj;
+                }
+            }
+            return null;
+        }
         public static void Atualizar(Produto pro)
         {
             Abrir();
