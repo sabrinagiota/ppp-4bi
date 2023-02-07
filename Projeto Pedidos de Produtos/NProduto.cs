@@ -81,12 +81,9 @@ namespace Projeto_Pedidos_de_Produtos
             xml.Serialize(f, Produtos);
             f.Close();
         }
-        public static double Soma()
+        public static double Soma(Produto pro)
         {
-            double add = 0;
-            foreach (Produto obj in Produtos)
-                add += obj.Preco;
-            return add;
+            return pro.Preco;
         }
     }
 }

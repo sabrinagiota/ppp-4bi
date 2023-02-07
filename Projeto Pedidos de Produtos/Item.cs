@@ -9,13 +9,12 @@ namespace Projeto_Pedidos_de_Produtos
     public class Item
     {
         public int ID { get; set; }
-        public int IdPedido { get; set; }
-        public int IdProduto { get; set; }
         public string DescricaoItem { get; set; }
+        public int IdProduto { get; set; }
 
         public override string ToString()
         {
-            return $"{ID} - {IdPedido} - {IdProduto} - {DescricaoItem}";
+            return $"{ID} - {IdProduto} - {DescricaoItem}";
         }
     }
 }

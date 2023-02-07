@@ -24,7 +24,8 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        int id = 0;
+        Item i;
+        Pedido p;
 
         private void ListarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -42,15 +43,15 @@ namespace Projeto_Pedidos_de_Produtos
         {
             if (listarpedido.SelectedItem != null)
             {
-                Pedido p = (Pedido)listarpedido.SelectedItem;
-                id = p.IdPedido;
+               p = (Pedido)listarpedido.SelectedItem;
+                NPedido.Total(p);
             }
         }
 
         private void Listaritens_Click(object sender, RoutedEventArgs e)
         {
             listarItens.ItemsSource = null;
-            listarItens.ItemsSource = NItem.ListarPedido(id);
+            listarItens.ItemsSource = NPedido.ItensPedido(p);
 
         }
 
@@ -58,15 +59,14 @@ namespace Projeto_Pedidos_de_Produtos
         {
             if (listarItens.SelectedItem != null)
             {
-                Item i = (Item)listarItens.SelectedItem;
-                id = i.ID;
+                i = (Item)listarItens.SelectedItem;
             }
         }
 
         private void listaproduto_Click(object sender, RoutedEventArgs e)
         {
             listarProdutos.ItemsSource = null;
-            listarProdutos.ItemsSource = NItem.ListarProduto(id);
+            listarProdutos.ItemsSource = NItem.ProdutodoItem(i);
         }
     }
 }

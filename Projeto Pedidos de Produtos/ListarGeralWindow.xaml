@@ -20,7 +20,7 @@
         <ListBox x:Name="listarpedido" HorizontalAlignment="Left" Height="100" Margin="85,97,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="listarpedido_SelectionChanged"/>
         <ListBox x:Name="listarItens" HorizontalAlignment="Left" Height="100" Margin="85,286,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="listarItens_SelectionChanged"/>
         <ListBox x:Name="listarProdutos" HorizontalAlignment="Left" Height="100" Margin="85,460,0,0" VerticalAlignment="Top" Width="720"/>
-        <ListBox HorizontalAlignment="Left" Height="50" Margin="85,642,0,0" VerticalAlignment="Top" Width="720"/>
+        <ListBox x:Name="listartotal" HorizontalAlignment="Left" Height="50" Margin="85,642,0,0" VerticalAlignment="Top" Width="720"/>
         <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Left" Height="25" Margin="407,211,0,0" VerticalAlignment="Top" Width="120" Click="Listaritens_Click"/>
         <Button x:Name="listaproduto" Content="Ver Produto" HorizontalAlignment="Left" Height="25" Margin="85,391,0,0" VerticalAlignment="Top" Width="120" Click="listaproduto_Click"/>
         <Button Content="Total do Pedido" HorizontalAlignment="Left" Height="25" Margin="86,697,0,0" VerticalAlignment="Top" Width="120"/>

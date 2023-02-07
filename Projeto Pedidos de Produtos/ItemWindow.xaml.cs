@@ -35,7 +35,7 @@ namespace Projeto_Pedidos_de_Produtos
                 DescricaoItem = descri,
             };
 
-            NItem.VincularProduto();
+            
             MessageBox.Show("Pedido feito retorne a paginas de produtos.");
         }
     }

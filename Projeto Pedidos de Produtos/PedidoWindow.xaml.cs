@@ -26,7 +26,7 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        ItemWindow it = new ItemWindow();
+        VincularProdutoWindow vincular = new VincularProdutoWindow();
         private void CadastrarPedido_Click(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(Idpedido.Text);
@@ -47,7 +47,7 @@ namespace Projeto_Pedidos_de_Produtos
             NPedido.Inserir(t);
 
             
-            it.ShowDialog();
+            vincular.ShowDialog();
         }
 
     }

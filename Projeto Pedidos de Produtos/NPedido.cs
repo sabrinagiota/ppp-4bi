@@ -29,6 +29,17 @@ namespace Projeto_Pedidos_de_Produtos
                 if (obj.IdPedido == id) return obj;
             return null;
         }
+        public static Item ItensPedido(Pedido p)
+        {
+            foreach (Pedido obj in Pedidos)
+            {
+                if (obj.IdItem == p.IdItem)
+                {
+                    return NItem.Listar(p.IdItem);
+                }
+            }
+            return null;
+        }
         public static void Atualizar(Pedido p)
         {
             Abrir();
@@ -71,6 +82,23 @@ namespace Projeto_Pedidos_de_Produtos
             StreamWriter f = new StreamWriter("./Pedidos.xml", false);
             xml.Serialize(f, Pedidos);
             f.Close();
+        }
+        public static void VincularItem(Item i, Pedido p)
+        {
+            p.IdItem = i.ID;
+            Atualizar(p);
+        }
+        public static void VincularProduto(Pedido p, Produto pro)
+        {
+            p.IdProduto = pro.IdProduto;
+            Atualizar(p);
+        }
+
+        public static double Total(Pedido p)
+        {
+            Pedido obj = p;
+            obj.Total += NProduto.Soma(NItem.ProdutodoItem(NPedido.ItensPedido(p)));
+            return obj.Total;
         }
     }
 }
