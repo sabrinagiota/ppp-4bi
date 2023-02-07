@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="530">
+        Title="MainWindow" Height="150" Width="230">
     <Grid x:Name="excluir" Margin="3,0,-3,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="FazerPedido" Content="Inserir Novo Pedido" Margin="0,0,370,154" Grid.Column="1" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519" HorizontalAlignment="Right" Width="150" Height="20" VerticalAlignment="Bottom"/>
-        <Button x:Name="LevarpraListar" Content="Listar Cadastrados" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,202,154" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click"/>
-        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="120,99,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
-        <Button x:Name="atualizar" Content="Atualizar" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,350,90" VerticalAlignment="Bottom" Click="atualizar_Click" Width="60"/>
-        <Button Content="Inserir Produto no Sistema" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="17,154,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="FazerPedido" Content="Inserir Novo Pedido" Margin="5,60,0,0" Grid.Column="1" Click="FazerPedido_Click" RenderTransformOrigin="0.389,0.519" HorizontalAlignment="Left" Width="150" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="LevarpraListar" Content="Listar Cadastrados" HorizontalAlignment="Right" Margin="0,0,75,104" VerticalAlignment="Bottom" Width="150" Height="20" Click="LevarpraListar_Click" Grid.ColumnSpan="2"/>
+        <Button Content="Excluir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="73,100,0,0" VerticalAlignment="Top" Click="Button_Click" Width="42"/>
+        <Button x:Name="atualizar" Content="Atualizar" HorizontalAlignment="Right" Margin="0,0,165,14" VerticalAlignment="Bottom" Click="atualizar_Click" Width="60" Grid.ColumnSpan="2"/>
+        <Button Content="Inserir Produto no Sistema" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="5,35,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>

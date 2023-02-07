@@ -26,7 +26,7 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        ItemEProdutoWindow it = new ItemEProdutoWindow();
+        ItemWindow it = new ItemWindow();
         private void CadastrarPedido_Click(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(Idpedido.Text);
