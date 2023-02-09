@@ -26,7 +26,6 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        ItemWindow item = new ItemWindow();
         private void CadastrarPedido_Click(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(Idpedido.Text);
@@ -36,7 +35,7 @@ namespace Projeto_Pedidos_de_Produtos
             string status = combostatus.Text;
  
 
-            Pedido t = new Pedido
+            Pedido p = new Pedido
             {
                 IdPedido = id,
                 NomeUsuario = nome,
@@ -44,16 +43,10 @@ namespace Projeto_Pedidos_de_Produtos
                 DataEnvio = dataenvio,
                 StatusPedido = status
             };
-            NPedido.Inserir(t);
+            NPedido.Inserir(p);
 
-            Item i = new Item()
-            {
-                IdPedido = id
-            };
-
-            NItem.Inserir(i);
-            
-            item.ShowDialog();
+            ItemWindow iten = new ItemWindow();
+            iten.ShowDialog();
         }
 
     }

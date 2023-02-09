@@ -54,5 +54,11 @@ namespace Projeto_Pedidos_de_Produtos
             ProdutoWindow pro = new ProdutoWindow();
             pro.ShowDialog();
         }
+
+        private void vincular_Click(object sender, RoutedEventArgs e)
+        {
+            VincularProdutoWindow vincular = new VincularProdutoWindow();
+            vincular.ShowDialog();
+        }
     }
 }

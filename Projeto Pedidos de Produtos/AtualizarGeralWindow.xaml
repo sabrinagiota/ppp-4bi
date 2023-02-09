@@ -7,31 +7,34 @@
         mc:Ignorable="d"
         Title="AtualizarGeralWindow" Height="900" Width="650">
     <Grid Margin="0,10,0,0" RenderTransformOrigin="0.522,0.502">
-        <TextBlock HorizontalAlignment="Left" Height="31" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" FontSize="22" FontWeight="Normal"><Run Text="Janela Para "/><Run Language="pt-br" Text="Atualizar cadastrados"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="attpedido" Content="Atualizar pedido" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="300" FontSize="20" Click="attpedido_Click" Margin="0,243,0,0"/>
-        <Button x:Name="attitem" Content="Atualizar item" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="300" FontSize="20" Click="attitem_Click" Margin="0,473,0,0"/>
-        <Button x:Name="attproduto" Content="Atualizar produto" HorizontalAlignment="Center" Margin="0,744,0,0" VerticalAlignment="Top" Height="53" Width="300" FontSize="20" Click="attproduto_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Right" Height="31" Margin="0,0,303,843" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="337" FontSize="22" FontWeight="Normal"><Run Text="Janela Para "/><Run Language="pt-br" Text="Atualizar cadastrados"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="attpedido" Content="Atualizar pedido" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="300" FontSize="20" Click="attpedido_Click" Margin="0,0,0,581"/>
+        <Button x:Name="attitem" Content="Atualizar item" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="300" FontSize="20" Click="attitem_Click" Margin="0,0,0,351"/>
+        <Button x:Name="attproduto" Content="Atualizar produto" HorizontalAlignment="Center" Margin="0,0,0,77" VerticalAlignment="Bottom" Height="53" Width="300" FontSize="20" Click="attproduto_Click"/>
         <TextBox x:Name="idpedidotext" HorizontalAlignment="Right" Margin="0,0,467,762" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20" FontSize="19"/>
-        <TextBox x:Name="datacriacaotext" HorizontalAlignment="Left" Margin="65,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="19" Height="20"/>
-        <TextBox x:Name="dataenviotext" HorizontalAlignment="Left" Margin="65,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="19" RenderTransformOrigin="0.466,0.619" Height="20"/>
-        <TextBox x:Name="nomeusuariotext" HorizontalAlignment="Left" Margin="337,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20" FontSize="19"/>
+        <TextBox x:Name="datacriacaotext" HorizontalAlignment="Right" Margin="0,0,465,712" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontSize="19" Height="20"/>
+        <TextBox x:Name="dataenviotext" HorizontalAlignment="Right" Margin="0,0,465,662" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontSize="19" RenderTransformOrigin="0.466,0.619" Height="20"/>
+        <TextBox x:Name="nomeusuariotext" HorizontalAlignment="Right" Margin="0,0,63,708" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="250" Height="20" FontSize="19"/>
         <TextBox x:Name="iditemtext" HorizontalAlignment="Right" Margin="0,0,467,513" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20" FontSize="19"/>
-        <TextBox x:Name="descricaotext" HorizontalAlignment="Left" Margin="65,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="40" FontSize="19"/>
-        <TextBox x:Name="idprodutotext" HorizontalAlignment="Left" Margin="65,614,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" FontSize="19"/>
-        <TextBox x:Name="nomeprodutotext" HorizontalAlignment="Left" Margin="333,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20" FontSize="19"/>
-        <TextBox x:Name="fornecedortext" HorizontalAlignment="Left" Margin="65,681,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="20" FontSize="19"/>
-        <TextBox x:Name="precotext" HorizontalAlignment="Left" Margin="333,681,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" FontSize="19" RenderTransformOrigin="0.5,0.5"></TextBox>
-        <TextBlock HorizontalAlignment="Left" Height="17" Margin="65,664,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="337,665,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Preço"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="337,593,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="44,593,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id do Produto que deseja"/><Run Language="pt-br" Text=" Atualizar"/></TextBlock>
+        <TextBox x:Name="descricaotext" HorizontalAlignment="Right" Margin="0,0,335,432" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="250" Height="40" FontSize="19"/>
+        <TextBox x:Name="idprodutotext" HorizontalAlignment="Right" Margin="0,0,465,240" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20" FontSize="19"/>
+        <TextBox x:Name="nomeprodutotext" HorizontalAlignment="Right" Margin="0,0,67,245" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="250" Height="20" FontSize="19"/>
+        <TextBox x:Name="fornecedortext" HorizontalAlignment="Right" Margin="0,0,430,173" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="155" Height="20" FontSize="19"/>
+        <TextBox x:Name="precotext" HorizontalAlignment="Right" Margin="0,0,197,173" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Height="20" FontSize="19" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock HorizontalAlignment="Right" Height="17" Margin="0,0,498,193" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="87"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,283,193" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Preço"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,217,265" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,422,265" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Text="Id do Produto que deseja"/><Run Language="pt-br" Text=" Atualizar"/></TextBlock>
         <TextBlock HorizontalAlignment="Right" Margin="0,0,444,540" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Text="Id do "/><Run Language="pt-br" Text="Item"/><Run Text=" que deseja"/><Run Text=" Atualizar"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="65,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Descrição"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,534,477" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Descrição"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="101,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br"/></TextBlock>
         <TextBlock HorizontalAlignment="Right" Margin="0,0,431,787" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Text="Id do "/><Run Language="pt-br" Text="Pedido"/><Run Text=" que deseja"/><Run Text=" Atualizar"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="65,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Data de Criação"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="65,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Data de E"/><Run Language="pt-br" Text="n"/><Run Text="vio"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="337,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nome do Usuari"/><Run Language="pt-br" Text="o"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,501,737" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Data de Criação"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,512,684" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Text="Data de E"/><Run Language="pt-br" Text="n"/><Run Text="vio"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,219,733" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Text="Nome do Usuari"/><Run Language="pt-br" Text="o"/></TextBlock>
         <ComboBox x:Name="combostatus" HorizontalAlignment="Right" Margin="0,0,197,663" VerticalAlignment="Bottom" Width="120" IsEditable="True" Height="20">
             <ComboBoxItem Content="Negado"/>
             <ComboBoxItem Content="Enviado"/>
@@ -39,6 +42,6 @@
             <ComboBoxItem Content="Pendente"/>
             <ComboBoxItem Content="Concluido"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="337,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Status Do Pedido"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,222,683" TextWrapping="Wrap" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Status Do Pedido"/></TextBlock>
     </Grid>
 </Window>

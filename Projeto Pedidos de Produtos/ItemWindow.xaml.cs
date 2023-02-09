@@ -28,17 +28,13 @@ namespace Projeto_Pedidos_de_Produtos
         {
             int id = int.Parse(iditem.Text);
             string descri = descricao.Text;
+
             Item i = new Item()
             {
                 ID = id,
                 DescricaoItem = descri,
             };
-
-            Pedido p = NItem.PedidodoItem(i);
-
-            NItem.VincularPedido(i, p);
-
-            NItem.Atualizar(i);
+            NItem.Inserir(i);
 
             VincularProdutoWindow vincular = new VincularProdutoWindow();
             vincular.ShowDialog();

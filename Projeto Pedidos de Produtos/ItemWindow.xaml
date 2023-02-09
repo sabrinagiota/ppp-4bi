@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="ItemWindow" Height="300" Width="800">
     <Grid>
-        <TextBox x:Name="iditem" HorizontalAlignment="Left" Height="20" Margin="43,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox x:Name="descricao" HorizontalAlignment="Left" Height="76" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="43,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"><Run Language="pt-br" Text="Id do Item"/></TextBlock>
+        <TextBox x:Name="iditem" HorizontalAlignment="Right" Height="20" Margin="0,0,607,227" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="150"/>
+        <TextBox x:Name="descricao" HorizontalAlignment="Right" Height="76" Margin="0,0,61,100" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="700"/>
+        <TextBlock HorizontalAlignment="Right" Height="20" Margin="0,0,641,248" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="116"><Run Language="pt-br" Text="Id do Item"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="41,87,0,0" Text="Descrição do Item" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="inseriritem" Content="Inserir Item" HorizontalAlignment="Center" Height="50" Margin="0,204,0,0" VerticalAlignment="Top" Width="300" Click="inseriritem_Click"/>
+        <Button x:Name="inseriritem" Content="Inserir Item" HorizontalAlignment="Center" Height="50" Margin="0,0,0,30" VerticalAlignment="Bottom" Width="300" Click="inseriritem_Click"/>
     </Grid>
 </Window>

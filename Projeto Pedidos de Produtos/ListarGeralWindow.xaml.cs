@@ -43,13 +43,14 @@ namespace Projeto_Pedidos_de_Produtos
         {
             Pedido p = (Pedido)listarpedido.SelectedItem;
             listarItens.ItemsSource = null;
-            listarItens.ItemsSource = NItem.ItensPedido(p).ToString();
+            listarItens.ItemsSource = NItem.ItensPedido(p);
+            NPedido.Total(p);
         }
         private void listaproduto_Click(object sender, RoutedEventArgs e)
         {
             Item i = (Item)listarItens.SelectedItem;
             listarProdutos.ItemsSource = null;
-            listarProdutos.ItemsSource = NItem.ProdutodoItem(i).ToString();
+            listarProdutos.ItemsSource = NProduto.produtos(i); ;
         }
 
         private void listarpedido_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -57,7 +58,7 @@ namespace Projeto_Pedidos_de_Produtos
             if (listarpedido.SelectedItem != null)
             {
                 Pedido p = (Pedido)listarpedido.SelectedItem;
-                NPedido.Total(p);
+
             }
         }
     }

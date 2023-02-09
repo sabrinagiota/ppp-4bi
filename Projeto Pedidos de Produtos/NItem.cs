@@ -29,29 +29,33 @@ namespace Projeto_Pedidos_de_Produtos
                 if (obj.ID == id) return obj;
             return null;
         }
-        public static Produto ProdutodoItem(Item i)
+        public static Produto ProdutoItem(Item i)
         {
             foreach (Item obj in Itens)
             {
-                if (obj.IdProduto == i.ID)
+                if (obj.IdProduto == i.IdProduto)
                 {
-                    return NProduto.Listar(i.ID);
+                    return NProduto.Listar(obj.IdProduto);
                 }
             }
             return null;
         }
-        public static Item ItensPedido(Pedido p)
+        public static List<Item> ItensPedido(Pedido p)
         {
+
+            Abrir();
+            List<Item> lista = new List<Item>();
             foreach (Item obj in Itens)
             {
                 if (obj.IdPedido == p.IdPedido)
                 {
-                    return obj;
+                    lista.Add(obj);
+                    return lista;
                 }
             }
             return null;
         }
-        public static Pedido PedidodoItem(Item i)
+        public static Pedido PedidoItem(Item i)
         {
             foreach (Item obj in Itens)
             {
@@ -105,12 +109,13 @@ namespace Projeto_Pedidos_de_Produtos
         public static void VincularPedido(Item i, Pedido p)
         {
             i.IdPedido = p.IdPedido;
-            Atualizar(i);
+            Inserir(i);
         }
         public static void VincularProduto(Item i, Produto pro)
         {
             i.IdProduto = pro.IdProduto;
-            Atualizar(i);
+            Inserir(i);
         }
+
     }
 }

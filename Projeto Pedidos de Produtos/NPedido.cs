@@ -75,9 +75,19 @@ namespace Projeto_Pedidos_de_Produtos
 
         public static double Total(Pedido p)
         {
-            Pedido obj = p;
-            obj.Total += NProduto.Soma(NItem.ProdutodoItem(NItem.ItensPedido(p)));
-            return obj.Total;
+            List<Item> listaitem = NItem.ItensPedido(p);
+            double d = 0;
+
+            foreach (Item obj in listaitem)
+            {
+                List<Produto> Listaproduto = NProduto.produtos(obj);
+                foreach (Produto k in Listaproduto)
+                {
+                    d += k.Preco;
+                }
+                return d;
+            }
+            return d;
         }
     }
 }

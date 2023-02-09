@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="ProdutoWindow" Height="350" Width="800">
     <Grid>
-        <TextBox x:Name="idproduto" HorizontalAlignment="Left" Height="20" Margin="52,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox x:Name="nomeproduto" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Margin="305,45,0,0"/>
-        <TextBox x:Name="fornecedor" HorizontalAlignment="Center" Height="45" Margin="0,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="698"/>
-        <TextBox x:Name="pre" HorizontalAlignment="Left" Height="20" Margin="53,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="53,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Id do Produto"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="305,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="150"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="52,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="75"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="53,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="pt-br" Text="Preço"/></TextBlock>
-        <Button x:Name="inserirproduto" Content="Inserir Produto" HorizontalAlignment="Center" Height="50" Margin="0,256,0,0" VerticalAlignment="Top" Width="300" Click="inserirproduto_Click"/>
+        <TextBox x:Name="idproduto" HorizontalAlignment="Right" Height="20" Margin="0,0,598,269" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="150"/>
+        <TextBox x:Name="nomeproduto" HorizontalAlignment="Right" Height="20" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="250" Margin="0,0,245,269"/>
+        <TextBox x:Name="fornecedor" HorizontalAlignment="Center" Height="45" Margin="0,0,0,173" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="698"/>
+        <TextBox x:Name="pre" HorizontalAlignment="Right" Height="20" Margin="0,0,617,102" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="130"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,672,289" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20" Width="75"><Run Language="pt-br" Text="Id do Produto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,345,289" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20" Width="150"><Run Language="pt-br" Text="Nome do Produto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,673,219" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20" Width="75"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Height="20" Margin="0,0,657,123" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="90"><Run Language="pt-br" Text="Preço"/></TextBlock>
+        <Button x:Name="inserirproduto" Content="Inserir Produto" HorizontalAlignment="Center" Height="50" Margin="0,0,0,28" VerticalAlignment="Bottom" Width="300" Click="inserirproduto_Click"/>
     </Grid>
 </Window>

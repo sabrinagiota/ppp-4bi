@@ -81,9 +81,19 @@ namespace Projeto_Pedidos_de_Produtos
             xml.Serialize(f, Produtos);
             f.Close();
         }
-        public static double Soma(Produto pro)
+
+        public static List<Produto> produtos(Item i)
         {
-            return pro.Preco;
+            List<Produto> listacopy = new List<Produto>();
+            foreach (Produto obj in Produtos)
+            {
+                if (i.IdProduto == obj.IdProduto)
+                {
+                    listacopy.Add(obj);
+                    return listacopy;
+                }
+            }
+            return null;
         }
     }
 }

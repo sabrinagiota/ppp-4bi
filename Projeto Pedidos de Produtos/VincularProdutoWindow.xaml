@@ -5,14 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_Pedidos_de_Produtos"
         mc:Ignorable="d"
-        Title="VincularProdutoWindow" Height="450" Width="800">
+        Title="VincularProdutoWindow" Height="450" Width="1200">
     <Grid>
-        <ListBox x:Name="ListadeProdutos" HorizontalAlignment="Left" Height="346" Margin="19,0,0,0" VerticalAlignment="Center" Width="334"/>
-        <ListBox x:Name="ListaddePedidos" HorizontalAlignment="Left" Height="207" Margin="367,44,0,0" VerticalAlignment="Top" Width="423"/>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="19,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66"><Run Language="pt-br" Text="Produtos"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="367,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
-        <Button x:Name="vincular" Content="Adicionar Produto ao Pedido" HorizontalAlignment="Left" Height="50" Margin="428,273,0,0" VerticalAlignment="Top" Width="300" Click="vincular_Click"/>
-        <Button x:Name="Listarclick" Content="Listar" HorizontalAlignment="Left" Height="30" Margin="429,332,0,0" VerticalAlignment="Top" Width="300" Click="Listarclick_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="ListadeProdutos" HorizontalAlignment="Right" Height="350" Margin="0,0,813,24" VerticalAlignment="Bottom" Width="350"/>
+        <ListBox x:Name="ListaddePedidos" HorizontalAlignment="Right" Height="207" Margin="0,0,383,167" VerticalAlignment="Bottom" Width="423"/>
+        <TextBlock HorizontalAlignment="Right" Height="21" Margin="0,0,1043,374" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Height="21" Margin="0,0,747,374" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="59"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <Button x:Name="vincular" Content="Adicionar Produto ao Pedido" HorizontalAlignment="Center" Height="50" Margin="0,0,0,99" VerticalAlignment="Bottom" Width="300" Click="vincular_Click"/>
+        <Button x:Name="Listarclick" Content="Listar" HorizontalAlignment="Center" Height="30" Margin="0,0,0,27" VerticalAlignment="Bottom" Width="300" Click="Listarclick_Click"/>
+        <ListBox x:Name="listaitens" HorizontalAlignment="Right" Height="350" Margin="0,0,28,24" VerticalAlignment="Bottom" Width="350"/>
+        <TextBlock HorizontalAlignment="Right" Height="19" Margin="0,0,294,377" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="84"><Run Language="pt-br" Text="Itens"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <Button x:Name="ContinuarVinculandoItem" Content="Criar Novo Item" HorizontalAlignment="Right" Height="31" Margin="0,0,599,62" VerticalAlignment="Bottom" Width="150" Click="ContinuarVinculandoItem_Click"/>
+        <Button x:Name="VoltaraoMenu" Content="Voltar ao Menu" HorizontalAlignment="Right" Height="31" Margin="0,0,450,62" VerticalAlignment="Bottom" Width="146" Click="VoltaraoMenu_Click"/>
 
     </Grid>
 </Window>

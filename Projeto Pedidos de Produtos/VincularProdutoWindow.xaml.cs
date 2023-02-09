@@ -30,14 +30,13 @@ namespace Projeto_Pedidos_de_Produtos
             {
                 Produto pro = (Produto)ListadeProdutos.SelectedItem;
                 Pedido p = (Pedido)ListaddePedidos.SelectedItem;
-                Item i = NItem.ItensPedido(p);
+                Item i = (Item)listaitens.SelectedItem;
+                
                 NItem.VincularProduto(i, pro);
+
                 NItem.VincularPedido(i, p);
 
-                ItemWindow it = new ItemWindow();
-                it.ShowDialog();
-
-                Listarclick_Click(sender, e);
+                MessageBox.Show("Produto Vinculado");
             }
             else
             {
@@ -53,6 +52,21 @@ namespace Projeto_Pedidos_de_Produtos
 
             ListadeProdutos.ItemsSource = null;
             ListadeProdutos.ItemsSource = NProduto.Listar();
+
+            listaitens.ItemsSource = null;
+            listaitens.ItemsSource = NItem.Listar();
+        }
+
+        private void ContinuarVinculandoItem_Click(object sender, RoutedEventArgs e)
+        {
+            ItemWindow it = new ItemWindow();
+            it.ShowDialog();
+        }
+
+        private void VoltaraoMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.ShowDialog();
         }
     }
 }
