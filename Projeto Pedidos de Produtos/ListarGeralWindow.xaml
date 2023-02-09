@@ -18,10 +18,10 @@
         <TextBlock HorizontalAlignment="Right" Height="29" Margin="0,0,638,197" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="172" FontSize="21"><Run Text="Total do Pedido"/><LineBreak/><Run/></TextBlock>
         <Button x:Name="voltarmenu" Content="Voltar ao Menu Principal" HorizontalAlignment="Left" Height="50" Margin="55,749,0,0" VerticalAlignment="Top" Width="350" Click="voltarmenu_Click"/>
         <ListBox x:Name="listarpedido" HorizontalAlignment="Left" Height="100" Margin="85,97,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="listarpedido_SelectionChanged"/>
-        <ListBox x:Name="listarItens" HorizontalAlignment="Left" Height="100" Margin="85,286,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="listarItens_SelectionChanged"/>
+        <ListBox x:Name="listarItens" HorizontalAlignment="Left" Height="100" Margin="85,286,0,0" VerticalAlignment="Top" Width="720"/>
         <ListBox x:Name="listarProdutos" HorizontalAlignment="Left" Height="100" Margin="85,460,0,0" VerticalAlignment="Top" Width="720"/>
         <ListBox x:Name="listartotal" HorizontalAlignment="Left" Height="50" Margin="85,642,0,0" VerticalAlignment="Top" Width="720"/>
-        <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Left" Height="25" Margin="407,211,0,0" VerticalAlignment="Top" Width="120" Click="Listaritens_Click"/>
+        <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Center" Height="25" Margin="0,219,0,0" VerticalAlignment="Top" Width="120" Click="Listaritens_Click"/>
         <Button x:Name="listaproduto" Content="Ver Produto" HorizontalAlignment="Left" Height="25" Margin="85,391,0,0" VerticalAlignment="Top" Width="120" Click="listaproduto_Click"/>
         <Button Content="Total do Pedido" HorizontalAlignment="Left" Height="25" Margin="86,697,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>

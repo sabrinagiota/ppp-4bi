@@ -39,6 +39,8 @@ namespace Projeto_Pedidos_de_Produtos
                 Preco = prec
             };
 
+            NProduto.Inserir(pro);
+
             MessageBox.Show("Produto Cadastrado no sistema.");
         }
     }

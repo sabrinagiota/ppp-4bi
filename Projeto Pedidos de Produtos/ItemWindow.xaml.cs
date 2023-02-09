@@ -30,13 +30,18 @@ namespace Projeto_Pedidos_de_Produtos
             string descri = descricao.Text;
             Item i = new Item()
             {
-
                 ID = id,
                 DescricaoItem = descri,
             };
 
-            
-            MessageBox.Show("Pedido feito retorne a paginas de produtos.");
+            Pedido p = NItem.PedidodoItem(i);
+
+            NItem.VincularPedido(i, p);
+
+            NItem.Atualizar(i);
+
+            VincularProdutoWindow vincular = new VincularProdutoWindow();
+            vincular.ShowDialog();
         }
     }
 }

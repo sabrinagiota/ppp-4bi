@@ -34,6 +34,7 @@ namespace Projeto_Pedidos_de_Produtos
             };
 
             NPedido.Excluir(p);
+            MessageBox.Show("Pedido excluido com sucesso!");
         }
 
         private void ExItem_Click(object sender, RoutedEventArgs e)
@@ -46,6 +47,7 @@ namespace Projeto_Pedidos_de_Produtos
             };
 
             NItem.Excluir(i);
+            MessageBox.Show("Item excluido com sucesso!");
         }
 
         private void ExProduto_Click(object sender, RoutedEventArgs e)
@@ -58,6 +60,7 @@ namespace Projeto_Pedidos_de_Produtos
             };
 
             NProduto.Excluir(pro);
+            MessageBox.Show("Produto excluido com sucesso!");
         }
     }
 }

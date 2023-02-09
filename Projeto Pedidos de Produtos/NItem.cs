@@ -40,6 +40,29 @@ namespace Projeto_Pedidos_de_Produtos
             }
             return null;
         }
+        public static Item ItensPedido(Pedido p)
+        {
+            foreach (Item obj in Itens)
+            {
+                if (obj.IdPedido == p.IdPedido)
+                {
+                    return obj;
+                }
+            }
+            return null;
+        }
+        public static Pedido PedidodoItem(Item i)
+        {
+            foreach (Item obj in Itens)
+            {
+                if (obj.IdPedido == i.IdPedido)
+                {
+                    return NPedido.Listar(i.IdPedido);
+                }
+                
+            }
+            return null;
+        }
         public static void Atualizar(Item i)
         {
             Abrir();
@@ -79,6 +102,15 @@ namespace Projeto_Pedidos_de_Produtos
             xml.Serialize(f, Itens);
             f.Close();
         }
-
+        public static void VincularPedido(Item i, Pedido p)
+        {
+            i.IdPedido = p.IdPedido;
+            Atualizar(i);
+        }
+        public static void VincularProduto(Item i, Produto pro)
+        {
+            i.IdProduto = pro.IdProduto;
+            Atualizar(i);
+        }
     }
 }

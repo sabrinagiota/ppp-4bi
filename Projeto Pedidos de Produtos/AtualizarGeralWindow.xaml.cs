@@ -32,17 +32,16 @@ namespace Projeto_Pedidos_de_Produtos
             string dataenvio = dataenviotext.Text;
             string status = combostatus.Text;
 
-
-            Pedido p = new Pedido()
-            { 
-                IdPedido = idpedido,
-                NomeUsuario = nomeusuario,
-                DataCriacao = datacriacao,
-                DataEnvio = dataenvio,
-                StatusPedido = status
-            };
+            Pedido p = new Pedido();
+            p.IdPedido = idpedido;
+            p.NomeUsuario = nomeusuario;
+            p.DataCriacao = datacriacao;
+            p.DataEnvio = dataenvio;
+            p.StatusPedido = status;
 
             NPedido.Atualizar(p);
+
+            MessageBox.Show("Pedido Atualizado com sucesso!");
         }
 
         private void attitem_Click(object sender, RoutedEventArgs e)
@@ -50,13 +49,12 @@ namespace Projeto_Pedidos_de_Produtos
             int iditem = int.Parse(iditemtext.Text);
             string descricao = descricaotext.Text;
 
-            Item i = new Item()
-            {
-                ID = iditem,
-                DescricaoItem = descricao
-            };
+            Item i = new Item();
+            i.ID = iditem;
+            i.DescricaoItem = descricao;
 
             NItem.Atualizar(i);
+            MessageBox.Show("Item Atualizado com sucesso!");
         }
 
         private void attproduto_Click(object sender, RoutedEventArgs e)
@@ -66,15 +64,14 @@ namespace Projeto_Pedidos_de_Produtos
             string fornecedor = fornecedortext.Text;
             double preco = double.Parse(precotext.Text);
 
-            Produto pro = new Produto()
-            {
-                IdProduto = idproduto,
-                NomeProduto = nomeproduto,
-                Fornecedor = fornecedor,
-                Preco = preco
-            };
+            Produto pro = new Produto();
+            pro.IdProduto = idproduto;
+            pro.NomeProduto = nomeproduto;
+            pro.Fornecedor = fornecedor;
+            pro.Preco = preco;
 
             NProduto.Atualizar(pro);
+            MessageBox.Show("Produto Atualizado com sucesso!");
         }
     }
 }

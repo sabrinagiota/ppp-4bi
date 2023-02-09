@@ -24,8 +24,8 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        Item i;
-        Pedido p;
+
+
 
         private void ListarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -39,34 +39,26 @@ namespace Projeto_Pedidos_de_Produtos
             vol.ShowDialog();
         }
 
+        private void Listaritens_Click(object sender, RoutedEventArgs e)
+        {
+            Pedido p = (Pedido)listarpedido.SelectedItem;
+            listarItens.ItemsSource = null;
+            listarItens.ItemsSource = NItem.ItensPedido(p).ToString();
+        }
+        private void listaproduto_Click(object sender, RoutedEventArgs e)
+        {
+            Item i = (Item)listarItens.SelectedItem;
+            listarProdutos.ItemsSource = null;
+            listarProdutos.ItemsSource = NItem.ProdutodoItem(i).ToString();
+        }
+
         private void listarpedido_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listarpedido.SelectedItem != null)
             {
-               p = (Pedido)listarpedido.SelectedItem;
+                Pedido p = (Pedido)listarpedido.SelectedItem;
                 NPedido.Total(p);
             }
-        }
-
-        private void Listaritens_Click(object sender, RoutedEventArgs e)
-        {
-            listarItens.ItemsSource = null;
-            listarItens.ItemsSource = NPedido.ItensPedido(p);
-
-        }
-
-        private void listarItens_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (listarItens.SelectedItem != null)
-            {
-                i = (Item)listarItens.SelectedItem;
-            }
-        }
-
-        private void listaproduto_Click(object sender, RoutedEventArgs e)
-        {
-            listarProdutos.ItemsSource = null;
-            listarProdutos.ItemsSource = NItem.ProdutodoItem(i);
         }
     }
 }

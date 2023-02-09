@@ -30,7 +30,13 @@ namespace Projeto_Pedidos_de_Produtos
             {
                 Produto pro = (Produto)ListadeProdutos.SelectedItem;
                 Pedido p = (Pedido)ListaddePedidos.SelectedItem;
-                NPedido.VincularProduto(p, pro);
+                Item i = NItem.ItensPedido(p);
+                NItem.VincularProduto(i, pro);
+                NItem.VincularPedido(i, p);
+
+                ItemWindow it = new ItemWindow();
+                it.ShowDialog();
+
                 Listarclick_Click(sender, e);
             }
             else
@@ -44,6 +50,7 @@ namespace Projeto_Pedidos_de_Produtos
         {
             ListaddePedidos.ItemsSource = null;
             ListaddePedidos.ItemsSource = NPedido.Listar();
+
             ListadeProdutos.ItemsSource = null;
             ListadeProdutos.ItemsSource = NProduto.Listar();
         }

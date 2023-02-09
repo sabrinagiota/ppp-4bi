@@ -25,12 +25,6 @@ namespace Projeto_Pedidos_de_Produtos
             InitializeComponent();
         }
 
-        private void Pedido_Click(object sender, RoutedEventArgs e)
-        {
-            PedidoWindow pedido = new PedidoWindow();
-            pedido.ShowDialog();
-        }
-
         private void FazerPedido_Click(object sender, RoutedEventArgs e)
         {
             PedidoWindow pedid = new PedidoWindow();
@@ -55,5 +49,10 @@ namespace Projeto_Pedidos_de_Produtos
             atualizargeral.ShowDialog();
         }
 
+        private void inserirproduto_Click(object sender, RoutedEventArgs e)
+        {
+            ProdutoWindow pro = new ProdutoWindow();
+            pro.ShowDialog();
+        }
     }
 }

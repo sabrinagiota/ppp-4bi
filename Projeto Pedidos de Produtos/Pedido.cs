@@ -18,8 +18,6 @@ namespace Projeto_Pedidos_de_Produtos
         public string NomeUsuario { get; set; }
         public string StatusPedido { get; set; }
 
-        public int IdItem { get; set; }
-        public int IdProduto { get; set; }
 
         public override string ToString()
         {
