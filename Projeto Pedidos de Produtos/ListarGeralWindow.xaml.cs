@@ -42,15 +42,20 @@ namespace Projeto_Pedidos_de_Produtos
         private void Listaritens_Click(object sender, RoutedEventArgs e)
         {
             Pedido p = (Pedido)listarpedido.SelectedItem;
-            listarItens.ItemsSource = null;
-            listarItens.ItemsSource = NItem.ItensPedido(p);
-            NPedido.Total(p);
+            if (p != null) {
+                listarItens.ItemsSource = null;
+                listarItens.ItemsSource = NItem.ItensPedido(p);
+            }
+            
         }
         private void listaproduto_Click(object sender, RoutedEventArgs e)
         {
             Item i = (Item)listarItens.SelectedItem;
-            listarProdutos.ItemsSource = null;
-            listarProdutos.ItemsSource = NProduto.produtos(i); ;
+            if(i != null)
+            {
+                listarProdutos.ItemsSource = null;
+                listarProdutos.ItemsSource = NProduto.produtos(i); 
+            }
         }
 
         private void listarpedido_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -58,8 +63,22 @@ namespace Projeto_Pedidos_de_Produtos
             if (listarpedido.SelectedItem != null)
             {
                 Pedido p = (Pedido)listarpedido.SelectedItem;
-
             }
+        }
+
+        private void ListarTotal_Click(object sender, RoutedEventArgs e)
+        {
+            if (listarpedido.SelectedItem != null)
+            {
+                Pedido p = (Pedido)listarpedido.SelectedItem;
+                if (p != null) 
+                {
+
+                    listartotal.ItemsSource = null;
+                    listartotal.ItemsSource = NPedido.Total(p).ToString(); 
+                }
+            }
+            MessageBox.Show("selecione o Pedido que tenho algo vinculado!");
         }
     }
 }

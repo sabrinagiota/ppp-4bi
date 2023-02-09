@@ -34,10 +34,15 @@ namespace Projeto_Pedidos_de_Produtos
                 ID = id,
                 DescricaoItem = descri,
             };
-            NItem.Inserir(i);
+            if (id != 0 && descri == "")
+            {
+                NItem.Inserir(i);
+                MessageBox.Show("Item Criado.");
+                
+            }
+            else 
+                MessageBox.Show("Falta Preencher algo!"); 
 
-            VincularProdutoWindow vincular = new VincularProdutoWindow();
-            vincular.ShowDialog();
         }
     }
 }

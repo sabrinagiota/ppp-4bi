@@ -31,16 +31,20 @@ namespace Projeto_Pedidos_de_Produtos
                 Produto pro = (Produto)ListadeProdutos.SelectedItem;
                 Pedido p = (Pedido)ListaddePedidos.SelectedItem;
                 Item i = (Item)listaitens.SelectedItem;
-                
-                NItem.VincularProduto(i, pro);
 
-                NItem.VincularPedido(i, p);
+                if (i.ID != 0 && i.DescricaoItem == "")
+                {
+                    NItem.VincularProduto(i, pro);
 
-                MessageBox.Show("Produto Vinculado");
+                    NItem.VincularPedido(i, p);
+
+                    MessageBox.Show("Produto Vinculado");
+                }
+                else MessageBox.Show("Algo Está Errado!");
             }
             else
             {
-                MessageBox.Show("É preciso selecionar um cliente e um banco");
+                MessageBox.Show("É preciso selecionar um Pedido, um Item e um Produto");
             }
 
         }
@@ -48,12 +52,11 @@ namespace Projeto_Pedidos_de_Produtos
         private void Listarclick_Click(object sender, RoutedEventArgs e)
         {
             ListaddePedidos.ItemsSource = null;
-            ListaddePedidos.ItemsSource = NPedido.Listar();
-
-            ListadeProdutos.ItemsSource = null;
-            ListadeProdutos.ItemsSource = NProduto.Listar();
-
             listaitens.ItemsSource = null;
+            ListadeProdutos.ItemsSource = null;
+
+            ListaddePedidos.ItemsSource = NPedido.Listar();
+            ListadeProdutos.ItemsSource = NProduto.Listar();
             listaitens.ItemsSource = NItem.Listar();
         }
 

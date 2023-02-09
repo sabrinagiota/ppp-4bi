@@ -90,10 +90,9 @@ namespace Projeto_Pedidos_de_Produtos
                 if (i.IdProduto == obj.IdProduto)
                 {
                     listacopy.Add(obj);
-                    return listacopy;
                 }
             }
-            return null;
+            return listacopy;
         }
     }
 }

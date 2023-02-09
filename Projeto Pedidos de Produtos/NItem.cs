@@ -50,10 +50,9 @@ namespace Projeto_Pedidos_de_Produtos
                 if (obj.IdPedido == p.IdPedido)
                 {
                     lista.Add(obj);
-                    return lista;
                 }
             }
-            return null;
+            return lista;
         }
         public static Pedido PedidoItem(Item i)
         {
@@ -74,6 +73,8 @@ namespace Projeto_Pedidos_de_Produtos
             if (obj != null)
             {
                 obj.DescricaoItem = i.DescricaoItem;
+                obj.IdPedido = i.IdPedido;
+                obj.IdProduto = i.IdProduto;
             }
             Salvar();
         }
@@ -108,13 +109,13 @@ namespace Projeto_Pedidos_de_Produtos
         }
         public static void VincularPedido(Item i, Pedido p)
         {
-            i.IdPedido = p.IdPedido;
-            Inserir(i);
+                i.IdPedido = p.IdPedido;
+                Atualizar(i);
         }
         public static void VincularProduto(Item i, Produto pro)
         {
             i.IdProduto = pro.IdProduto;
-            Inserir(i);
+            Atualizar(i);
         }
 
     }

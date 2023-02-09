@@ -18,8 +18,8 @@
         <Button x:Name="Listarclick" Content="Listar" HorizontalAlignment="Center" Height="30" Margin="0,0,0,27" VerticalAlignment="Bottom" Width="300" Click="Listarclick_Click"/>
         <ListBox x:Name="listaitens" HorizontalAlignment="Right" Height="350" Margin="0,0,28,24" VerticalAlignment="Bottom" Width="350"/>
         <TextBlock HorizontalAlignment="Right" Height="19" Margin="0,0,294,377" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="84"><Run Language="pt-br" Text="Itens"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <Button x:Name="ContinuarVinculandoItem" Content="Criar Novo Item" HorizontalAlignment="Right" Height="31" Margin="0,0,599,62" VerticalAlignment="Bottom" Width="150" Click="ContinuarVinculandoItem_Click"/>
-        <Button x:Name="VoltaraoMenu" Content="Voltar ao Menu" HorizontalAlignment="Right" Height="31" Margin="0,0,450,62" VerticalAlignment="Bottom" Width="146" Click="VoltaraoMenu_Click"/>
+        <Button x:Name="ContinuarVinculandoItem" Content="Criar Novo Item" Margin="0,0,599,62" Click="ContinuarVinculandoItem_Click" Height="31" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150"/>
+        <Button x:Name="VoltaraoMenu" Content="Voltar ao Menu" Margin="0,0,450,62" Click="VoltaraoMenu_Click" Height="31" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="146"/>
 
     </Grid>
 </Window>

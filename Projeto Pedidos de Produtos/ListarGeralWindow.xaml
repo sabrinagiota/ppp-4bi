@@ -26,6 +26,6 @@
         <ListBox x:Name="listartotal" HorizontalAlignment="Right" Height="50" Margin="0,0,95,142" VerticalAlignment="Bottom" Width="720"/>
         <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,369,598" VerticalAlignment="Bottom" Width="120" Click="Listaritens_Click"/>
         <Button x:Name="listaproduto" Content="Ver Produto" HorizontalAlignment="Right" Height="25" Margin="0,0,695,418" VerticalAlignment="Bottom" Width="120" Click="listaproduto_Click"/>
-        <Button Content="Total do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,694,112" VerticalAlignment="Bottom" Width="120"/>
+        <Button x:Name="ListarTotal" Content="Total do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,694,112" VerticalAlignment="Bottom" Width="120" Click="ListarTotal_Click"/>
     </Grid>
 </Window>
