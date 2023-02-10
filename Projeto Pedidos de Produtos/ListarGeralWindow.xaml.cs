@@ -68,17 +68,17 @@ namespace Projeto_Pedidos_de_Produtos
 
         private void ListarTotal_Click(object sender, RoutedEventArgs e)
         {
-            if (listarpedido.SelectedItem != null)
+          
             {
                 Pedido p = (Pedido)listarpedido.SelectedItem;
-                if (p != null) 
+               
                 {
 
                     listartotal.ItemsSource = null;
                     listartotal.ItemsSource = NPedido.Total(p).ToString(); 
                 }
             }
-            MessageBox.Show("selecione o Pedido que tenho algo vinculado!");
+           
         }
     }
 }

@@ -13,19 +13,19 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Right" Height="31" Margin="0,0,450,793" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="440" FontSize="22" FontWeight="Normal"><Run Text="Janela Para "/><Run Language="pt-br" Text="Listar Dados Já cadastrados"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="0,0,714,742" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="35" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="0,0,714,549" FontSize="21" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="35" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Itens"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Margin="0,0,715,378" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="31" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Produtos"/></TextBlock>
-        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Right" Height="25" Margin="0,0,514,598" VerticalAlignment="Bottom" Width="300" Click="ListarButton_Click"/>
-        <TextBlock HorizontalAlignment="Right" Height="29" Margin="0,0,638,197" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="172" FontSize="21"><Run Text="Total do Pedido"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="voltarmenu" Content="Voltar ao Menu Principal" HorizontalAlignment="Right" Height="50" Margin="0,0,280,41" VerticalAlignment="Bottom" Width="350" Click="voltarmenu_Click"/>
+        <TextBlock HorizontalAlignment="Right" Height="31" Margin="0,0,374,793" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="440" FontSize="22" FontWeight="Normal"><Run Text="Janela Para "/><Run Language="pt-br" Text="Listar Dados Já cadastrados"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,714,738" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="35" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Pedidos"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,714,549" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="35" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Itens"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,715,366" FontSize="22" RenderTransformOrigin="0.189,0.598" HorizontalAlignment="Right" Width="100" Height="31" VerticalAlignment="Bottom"><Run Language="pt-br" Text="Produtos"/></TextBlock>
+        <Button x:Name="ListarButton" Content="Listar" HorizontalAlignment="Right" Height="25" Margin="0,0,514,600" VerticalAlignment="Bottom" Width="300" Click="ListarButton_Click"/>
+        <TextBlock HorizontalAlignment="Right" Height="29" Margin="0,0,642,203" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="172" FontSize="22"><Run Text="Total do Pedido"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="voltarmenu" Content="Voltar ao Menu Principal" HorizontalAlignment="Right" Height="50" Margin="0,0,280,33" VerticalAlignment="Bottom" Width="350" Click="voltarmenu_Click"/>
         <ListBox x:Name="listarpedido" HorizontalAlignment="Right" Height="100" Margin="0,0,95,637" VerticalAlignment="Bottom" Width="720" SelectionChanged="listarpedido_SelectionChanged"/>
         <ListBox x:Name="listarItens" HorizontalAlignment="Right" Height="100" Margin="0,0,95,448" VerticalAlignment="Bottom" Width="720"/>
-        <ListBox x:Name="listarProdutos" HorizontalAlignment="Right" Height="100" Margin="0,0,95,274" VerticalAlignment="Bottom" Width="720"/>
-        <ListBox x:Name="listartotal" HorizontalAlignment="Right" Height="50" Margin="0,0,95,142" VerticalAlignment="Bottom" Width="720"/>
-        <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,369,598" VerticalAlignment="Bottom" Width="120" Click="Listaritens_Click"/>
-        <Button x:Name="listaproduto" Content="Ver Produto" HorizontalAlignment="Right" Height="25" Margin="0,0,695,418" VerticalAlignment="Bottom" Width="120" Click="listaproduto_Click"/>
+        <ListBox x:Name="listarProdutos" HorizontalAlignment="Right" Height="100" Margin="0,0,95,262" VerticalAlignment="Bottom" Width="720"/>
+        <ListBox x:Name="listartotal" HorizontalAlignment="Right" Height="50" Margin="0,0,95,150" VerticalAlignment="Bottom" Width="720"/>
+        <Button x:Name="Listaritens" Content="Ver Itens do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,369,600" VerticalAlignment="Bottom" Width="120" Click="Listaritens_Click"/>
+        <Button x:Name="listaproduto" Content="Ver Produto" HorizontalAlignment="Right" Height="25" Margin="0,0,695,412" VerticalAlignment="Bottom" Width="120" Click="listaproduto_Click"/>
         <Button x:Name="ListarTotal" Content="Total do Pedido" HorizontalAlignment="Right" Height="25" Margin="0,0,694,112" VerticalAlignment="Bottom" Width="120" Click="ListarTotal_Click"/>
     </Grid>
 </Window>

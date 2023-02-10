@@ -31,8 +31,6 @@ namespace Projeto_Pedidos_de_Produtos
                 Produto pro = (Produto)ListadeProdutos.SelectedItem;
                 Pedido p = (Pedido)ListaddePedidos.SelectedItem;
                 Item i = (Item)listaitens.SelectedItem;
-
-                if (i.ID != 0 && i.DescricaoItem == "")
                 {
                     NItem.VincularProduto(i, pro);
 
@@ -40,7 +38,6 @@ namespace Projeto_Pedidos_de_Produtos
 
                     MessageBox.Show("Produto Vinculado");
                 }
-                else MessageBox.Show("Algo Está Errado!");
             }
             else
             {
