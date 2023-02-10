@@ -34,10 +34,9 @@ namespace Projeto_Pedidos_de_Produtos
                 ID = id,
                 DescricaoItem = descri,
             };
-            {    
-                NItem.Inserir(i);
-                MessageBox.Show("Item Criado.");  
-            }
+               
+            NItem.Inserir(i);
+            MessageBox.Show("Item Criado.");  
 
         }
     }

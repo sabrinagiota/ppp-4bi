@@ -69,15 +69,10 @@ namespace Projeto_Pedidos_de_Produtos
         private void ListarTotal_Click(object sender, RoutedEventArgs e)
         {
           
-            {
-                Pedido p = (Pedido)listarpedido.SelectedItem;
-               
-                {
+            Pedido p = (Pedido)listarpedido.SelectedItem;
 
-                    listartotal.ItemsSource = null;
-                    listartotal.ItemsSource = NPedido.Total(p).ToString(); 
-                }
-            }
+            listartotal.ItemsSource = null;
+            listartotal.ItemsSource = NPedido.Total(p).ToString(); 
            
         }
     }
